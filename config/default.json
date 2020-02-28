@@ -1,0 +1,5 @@
+{
+  "port": 5010,
+  "mongoUri": "mongodb+srv://oleg:161364@cluster0-rqmvn.azure.mongodb.net/app?retryWrites=true&w=majority",
+  "jwtSecret": "mern"
+}
