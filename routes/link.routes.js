@@ -39,7 +39,7 @@ async ( req, res) => {
   }
 })
 
-router.post('/',
+router.get('/',
 authMiddleware,
 async ( req, res) => {
   try {
