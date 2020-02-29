@@ -9,6 +9,8 @@ app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/link', require('./routes/link.routes'))
 app.use('/t', require('./routes/redirect.routes'))
 
+
+//Если продакшн то отдаем статику, index.html по обращению по любому пути
 if(process.env.NODE_ENV === 'prodaction') {
   app.use('/', express.static(path.join(__dirname, 'client', 'build')
   ))
